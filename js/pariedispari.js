@@ -13,6 +13,7 @@
 // ?3 - Devo restituire qualcosa? (se si cosa? di che tipo?)
 // ?4 OPZIONALE:  Qualcosa  potrebbe andare storto? (se si, cosa?)
 
+
 userChoice = (prompt('Scegli pari o dispari')).trim();
 console.log(userChoice);
 
@@ -50,10 +51,9 @@ function isEven(number) {
 const response = isEven(sum);
 console.log(response)
 
-if (response == userChoice) {
-    console.log('HAI VINTO');
-} else {
-    console.log('HAI PERSO');
-}
+response == userChoice ? console.log('HAI VINTO') : console.log('HAI PERSO');
+
+
+
 
 
