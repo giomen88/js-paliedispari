@@ -36,23 +36,24 @@ console.log(sum);
 
 // FUNZIONE
 function isEven(number) {
-    let result = false;
+
+    let result = 'dispari';
 
     if (number % 2 === 0) {
-        result = true;
+        result = 'pari';
     }
 
     return result;
 }
 //
 
-if (result = false) {
-    console.log('Il risultato è DISPARI');
-} else {
-    console.log('Il risultato è PARI');
-}
-
 const response = isEven(sum);
 console.log(response)
+
+if (response == userChoice) {
+    console.log('HAI VINTO');
+} else {
+    console.log('HAI PERSO');
+}
 
 
