@@ -12,7 +12,7 @@
 
 const userWord = (prompt('Inserisci una parola')).trim();
 
-// aggiungere funzione da qui
+// FUNZIONE
 function reverseWord(text) {
 
     wordArray = text.split('');
@@ -30,7 +30,10 @@ function reverseWord(text) {
 
     text === reversedWord ? console.log("La parola inserita E' palindroma") : console.log("La parola inserita NON E' palindroma");
 
-    return reverse;
+    return reversedWord;
 }
+//
 
-console.log(reverseWord(userWord))
+const result = reverseWord(userWord)
+
+console.log(result)

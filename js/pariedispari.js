@@ -12,3 +12,47 @@
 // ?2 - Ho bisogno di parametri? (se si quali?)
 // ?3 - Devo restituire qualcosa? (se si cosa? di che tipo?)
 // ?4 OPZIONALE:  Qualcosa  potrebbe andare storto? (se si, cosa?)
+
+userChoice = (prompt('Scegli pari o dispari')).trim();
+console.log(userChoice);
+
+userNumber = parseInt(prompt('Scegli un numero da 1 a 5'));
+console.log(userNumber);
+
+// FUNZIONE
+function getRandomNumber(min, max) {
+
+    const randomNumber = Math.floor(Math.random() * (max - min)) + min;
+
+    return randomNumber;
+}
+//
+
+const pcNumber = getRandomNumber(1, 5);
+console.log(pcNumber);
+
+const sum = userNumber + pcNumber;
+console.log(sum);
+
+// FUNZIONE
+function isEven(number) {
+    let result = false;
+
+    if (number % 2 === 0) {
+        result = true;
+    }
+
+    return result;
+}
+//
+
+if (result = false) {
+    console.log('Il risultato è DISPARI');
+} else {
+    console.log('Il risultato è PARI');
+}
+
+const response = isEven(sum);
+console.log(response)
+
+
