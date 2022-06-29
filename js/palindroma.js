@@ -10,3 +10,27 @@
 // ?3 - Devo restituire qualcosa? (se si cosa? di che tipo?)
 // ?4 OPZIONALE:  Qualcosa  potrebbe andare storto? (se si, cosa?)
 
+const userWord = (prompt('Inserisci una parola')).trim();
+
+// aggiungere funzione da qui
+function reverseWord(text) {
+
+    wordArray = text.split('');
+    console.log(wordArray);
+
+    let reversedWord = '';
+
+    i = wordArray.length - 1;
+
+    while (i >= 0) {
+        reversedWord += wordArray[i].valueOf();
+        i--;
+    }
+    console.log(reversedWord);
+
+    text === reversedWord ? console.log("La parola inserita E' palindroma") : console.log("La parola inserita NON E' palindroma");
+
+    return reverse;
+}
+
+console.log(reverseWord(userWord))
