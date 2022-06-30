@@ -14,26 +14,12 @@
 // ?4 OPZIONALE:  Qualcosa  potrebbe andare storto? (se si, cosa?)
 
 
-userChoice = (prompt('Scegli pari o dispari')).trim();
-console.log(userChoice);
-
-userNumber = parseInt(prompt('Scegli un numero da 1 a 5'));
-console.log(userNumber);
-
 // FUNZIONE
 function getRandomNumber(min, max) {
 
-    const randomNumber = Math.floor(Math.random() * (max - min)) + min;
-
-    return randomNumber;
+    return randomNumber = Math.floor(Math.random() * (max + 1 - min)) + min;
 }
 //
-
-const pcNumber = getRandomNumber(1, 5);
-console.log(pcNumber);
-
-const sum = userNumber + pcNumber;
-console.log(sum);
 
 // FUNZIONE
 function isEven(number) {
@@ -47,6 +33,24 @@ function isEven(number) {
     return result;
 }
 //
+
+let userChoice = (prompt('Scegli pari o dispari')).trim().toLowerCase();
+while (userChoice !== 'pari' && userChoice !== 'dispari') {
+    userChoice = (prompt('Scegli pari o dispari')).trim().toLowerCase();
+}
+console.log(userChoice);
+
+let userNumber = parseInt(prompt('Scegli un numero da 1 a 5'));
+while (isNaN(userNumber) || userNumber < 1 || userNumber > 5) {
+    userNumber = parseInt(prompt('Scegli un numero da 1 a 5'));
+}
+console.log(userNumber);
+
+const pcNumber = getRandomNumber(1, 5);
+console.log(pcNumber);
+
+const sum = userNumber + pcNumber;
+console.log(sum);
 
 const response = isEven(sum);
 console.log(response)

@@ -10,7 +10,7 @@
 // ?3 - Devo restituire qualcosa? (se si cosa? di che tipo?)
 // ?4 OPZIONALE:  Qualcosa  potrebbe andare storto? (se si, cosa?)
 
-const userWord = (prompt('Inserisci una parola')).trim();
+const userWord = prompt('Inserisci una parola').trim();
 
 // FUNZIONE
 function reverseWord(text) {
